@@ -1,132 +1,194 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<style>
-.btn-outline-primary {
-  color: #ff8300;
-  border-color: #ff8300;
-}
-
-.btn-outline-primary:hover {
-  background-color: #ff8300;
-  border-color: #ff8300;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
-  background-color: #ff8300;
-  border-color: #ff8300;
-}
-
-</style>
 
 {{outlet}}
 
-<!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Open Access Exhibition</h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Openness</a>
-      <a class="p-2 text-dark" href="#">Accessibility</a>
-      <a class="p-2 text-dark" href="#">Possibility</a>
-      <a class="p-2 text-dark" href="#">Examples</a>
-    </nav>
-  </div> -->
+<!-- Wheel -->
+<div class="wheel">
+  <ul>
+    <li class="oa-wheel oa-cover">
+      <img src="assets/images/home/cover.png" height="150px">
+    </li>
 
-  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <img src="assets/images/cover/cover.png" height="150px">
-  </div>
+    {{#photo-swipe items=wheel history=false as |photoswipe|}}
+      <li class="oa-wheel oa-wheel-black cursor-pointer">
+        <img src="assets/images/home/relation-immediate-and-free.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=0)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-red cursor-pointer">
+        <img src="assets/images/home/reader-reducing-barriers-to-access.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=1)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-red cursor-pointer">
+        <img src="assets/images/home/reader-sharing-and-using.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=2)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-red cursor-pointer">
+        <img src="assets/images/home/reader-engaging-the-sustained-argument.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=3)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-black cursor-pointer">
+        <img src="assets/images/home/relation-new-possibilities.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=4)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-orange cursor-pointer">
+        <img src="assets/images/home/author-engaging-the-humanities.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=5)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-orange cursor-pointer">
+        <img src="assets/images/home/author-reducing-market-barriers.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=6)}}>
+      </li>
+      <li class="oa-wheel oa-wheel-orange cursor-pointer">
+        <img src="assets/images/home/author-widening-potential-relationship.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=7)}}>
+      </li>
+    {{/photo-swipe}}
+  </ul>
+</div><!-- Wheel -->
 
-  <div class="container">
-    <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Openness</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title"><img src="assets/images/icons/unlocked.svg" height="100px"></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Widening Potential Readership</li>
-            <li>Reducing Market Barriers</li>
-            <li>Engaging the Humanities</li>
-            <li> &zwnj; </li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-            {{#photo-swipe items=orange history=false as |photoswipe|}}
-              {{#each orange as |item index|}}
-                <a {{action photoswipe.actions.open (hash index=index)}} >View</a>
-              {{/each}}
-            {{/photo-swipe}}
-          </button>
-        </div>
+<div class="container">
+
+  <!-- Scroll Down -->
+  <div class="row">
+    <div class="col-md-12">
+      <span class="scroll-btn">
+        <span class="mouse">
+          <span></span>
+      </span>
+      <p>scroll down</p>
+      </span>
+    </div>
+  </div><!-- Scroll Down -->
+
+  <!-- Introduction -->
+  <div class="row">
+    <div class="col-md-12 section">
+      <div class="page-1">
+        Open access is the free, immediate, online availability of scholarship. Ideally, it includes some rights that allow others to reuse the scholarship at least for noncommercial, educational purposes.
       </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Accessibility</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title"><img src="assets/images/icons/key.svg" height="100px"></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Reducing Barriers to Access</li>
-            <li>Sharing and Using</li>
-            <li>Sustain the Sustained Argument</li>
-            <li> &zwnj; </li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-            {{#photo-swipe items=items history=false as |photoswipe|}}
-              {{#each items as |item index|}}
-                <a {{action photoswipe.actions.open (hash index=index)}} >View</a>
-              {{/each}}
-            {{/photo-swipe}}
-          </button>
-        </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Possibilities</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title"><img src="assets/images/icons/fireworks.svg" height="100px"></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Immediate and Free</li>
-            <li>New Possibilities</li>
-            <li> &zwnj; </li>
-            <li> &zwnj; </li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">
-            {{#photo-swipe items=black history=false as |photoswipe|}}
-              {{#each black as |item index|}}
-                <a {{action photoswipe.actions.open (hash index=index)}} >View</a>
-              {{/each}}
-            {{/photo-swipe}}
-          </button>
-        </div>
-      </div>
-
-
     </div>
 
-    <footer class="pt-4 my-md-5 pt-md-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <small class="d-block mb-3 text-muted">
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Emory University</a></li>
-              <li><a class="text-muted" href="#">Emory Center for Digital Scholarship</a></li>
-              <li><a class="text-muted" href="#">Fox Center for Humanistic Inquiry</a></li>
-            </ul>
-          </small>
-        </div>
-        <div class="col-6 col-md">
+    <div class="col-md-6" style="color: white">
+      <p>
+        With the rise of open access initiatives around the globe, academics and university presses are exploring what it means to make a book open access while also ensuring that the book still serves its intended purpose.
+      </p>
+      <p>
+        Over the last twenty years, open access publishing in the scientific disciplines is commonplace. Yet the practices for open access publishing in the humanities are still developing.
+      </p>
+      <p>
+        Monographs, or academic books that present a sustained argument on a research question, have long served as the foundation of academic publishing in the humanities. Traditionally published as print books by university presses, monographs are often expensive
+        to produce and to buy.
+      </p>
+      <p>
+        Publishing open access books yields a variety of benefits for both the reader and the author. This exhibit explores those benefits as well as the tensions that exist between open access and traditional publishing.
+      </p>
+    </div>
 
-        </div>
-        <div class="col-6 col-md">
-
-        </div>
-        <div class="col-6 col-md">
-
-        </div>
-
+    <div class="col-md-6">
+      <div class="text-center spacer">
+        <img src="assets/images/home/lock-grey.png" class="fit-image img-lock">
       </div>
-    </footer>
-  </div>
+      <div class="page-3">
+        <span class="page-2"> &#8239;open access&#8239;</span> is the free, immediate, online availability of scholarship.
+        <span class="page-2"> &#8239;monograph&#8239;</span> is an academic book that presents a sustained argument on a research question
+      </div>
+    </div>
+  </div><!-- Introduction -->
+
+  <!-- Benefits and Tensions -->
+  <div class="row section text-center spacer">
+    <div class="col-md-6 block">
+      <div class="text-1 orange">for authors</div>
+      <div class="oa-benefits"><span class="page-orange">&#8239;You write to be read.&#8239;</span></div>
+      {{#photo-swipe items=author history=false as |photoswipe|}}
+        <a class="link-orange text-1 btn-outline-orange" {{action photoswipe.actions.open (hash index=0)}}> benefits and tensions</a>
+      {{/photo-swipe}}
+    </div>
+
+    <div class="col-md-6 block">
+      <div class="text-1 red">for readers</div>
+      <div class="oa-benefits"><span class="page-red">&#8239;You read to write.&#8239;</span></div>
+      {{#photo-swipe items=reader history=false as |photoswipe|}}
+        <a class="link-red text-1 btn-outline-red" {{action photoswipe.actions.open (hash index=0)}}> benefits and tensions</a>
+      {{/photo-swipe}}
+    </div>
+  </div><!-- Benefits and Tensions -->
+
+  <!-- Examples -->
+  <div class="row section spacer">
+    <div class="col-md-12 page-1 text-center">Open Access Examples</div>
+
+    <div class="col-md-3">
+      <a target="_blank" href="http://www.enchantingthedesert.com/home/">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/projects/desert.png" alt="Enchanting the Desert">
+          <div class="card-body">
+            <div class="project-title">Enchanting the Desert</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a target="_blank" href="http://www.mappingsenufo.org/">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/projects/mapping.png" alt="Mapping Senufo">
+          <div class="card-body">
+            <div class="project-title">Mapping Senufo</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a target="_blank" href="https://www.fulcrum.org/">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/projects/fulcrum.png" alt="Fulcrum Project">
+          <div class="card-body">
+            <div class="project-title">Fulcrum Project</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a target="_blank" href="https://scalar.me/anvc/scalar/">
+        <div class="card">
+          <img class="card-img-top" src="assets/images/projects/scalar.png" alt="Scalar Project">
+          <div class="card-body">
+            <div class="project-title">Scalar Project</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div><!-- Examples -->
+
+  <!-- Footer -->
+  <footer class="footer-flex-container">
+    <div class="footer-copyrights">
+      <div class="highlight">Open Access Exhibition is sponsored by</div>
+      <div class="copyright">
+        <div class="highlight"><a href="http://www.cfde.emory.edu/" class="footer-link" target=”_blank”>Emory Center for Faculty Development and Excellence</a> </div>
+        <div class="highlight"><a href="http://digitalscholarship.emory.edu/" class="footer-link" target=”_blank”>Emory Center for Digital Scholarship</a> </div>
+        <div class="highlight"><a href="http://fchi.emory.edu/home/" class="footer-link" target=”_blank”>Emory Fox Center for Humanistic Inquries</a></div>
+      </div>
+    </div>
+  </footer>
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  // initialize the wheel
+  var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
+    radius = '15em', //distance from center
+    start = -90, //shift start from 0
+    $elements = $('li:not(:first-child)'),
+    numberOfElements = (type === 1) ? $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
+    slice = 360 * type / numberOfElements;
+
+  $elements.each(function(i) {
+    var $self = $(this),
+      rotate = slice * i + start,
+      rotateReverse = rotate * -1;
+
+    $self.css({
+      'transform': 'rotate(' + rotate + 'deg) translate(' + radius + ') rotate(' + rotateReverse + 'deg)'
+    });
+  });
+</script>
