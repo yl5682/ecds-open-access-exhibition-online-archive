@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="/assets/fonts/fonts.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 {{outlet}}
@@ -6,33 +7,33 @@
 <div class="wheel">
   <ul>
     <li class="oa-wheel oa-cover">
-      <img src="assets/images/home/cover.png" height="150px">
+      <img src="assets/images/home/cover.webp" height="150px" alt="Open Access Exhibition">
     </li>
 
     {{#photo-swipe items=wheel history=false as |photoswipe|}}
       <li class="oa-wheel oa-wheel-black cursor-pointer">
-        <img src="assets/images/home/relation-immediate-and-free.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=0)}}>
+        <img src="assets/images/home/relation-immediate-and-free.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=0)}} alt="Immediate and Free">
       </li>
       <li class="oa-wheel oa-wheel-red cursor-pointer">
-        <img src="assets/images/home/reader-reducing-barriers-to-access.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=1)}}>
+        <img src="assets/images/home/reader-reducing-barriers-to-access.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=1)}} alt="Reader - Reduce Barriers to Access">
       </li>
       <li class="oa-wheel oa-wheel-red cursor-pointer">
-        <img src="assets/images/home/reader-sharing-and-using.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=2)}}>
+        <img src="assets/images/home/reader-sharing-and-using.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=2)}} alt="Reader - Sharing and Using">
       </li>
       <li class="oa-wheel oa-wheel-red cursor-pointer">
-        <img src="assets/images/home/reader-engaging-the-sustained-argument.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=3)}}>
+        <img src="assets/images/home/reader-engaging-the-sustained-argument.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=3)}} alt="Reader - Engaging the Sustained Argument">
       </li>
       <li class="oa-wheel oa-wheel-black cursor-pointer">
-        <img src="assets/images/home/relation-new-possibilities.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=4)}}>
+        <img src="assets/images/home/relation-new-possibilities.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=4)}} alt="New Possibilities">
       </li>
       <li class="oa-wheel oa-wheel-orange cursor-pointer">
-        <img src="assets/images/home/author-engaging-the-humanities.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=5)}}>
+        <img src="assets/images/home/author-engaging-the-humanities.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=5)}} alt="Auhthor - Engaging the Humanities">
       </li>
       <li class="oa-wheel oa-wheel-orange cursor-pointer">
-        <img src="assets/images/home/author-reducing-market-barriers.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=6)}}>
+        <img src="assets/images/home/author-reducing-market-barriers.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=6)}} alt="Author - Reducing Market Barriers">
       </li>
       <li class="oa-wheel oa-wheel-orange cursor-pointer">
-        <img src="assets/images/home/author-widening-potential-relationship.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=7)}}>
+        <img src="assets/images/home/author-widening-potential-relationship.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=7)}} alt="Author - Widening Potential Relationship">
       </li>
     {{/photo-swipe}}
   </ul>
@@ -78,7 +79,7 @@
 
     <div class="col-md-6">
       <div class="text-center spacer">
-        <img src="assets/images/home/lock-grey.png" class="fit-image img-lock">
+        <img src="assets/images/home/lock-grey.webp" class="fit-image img-lock" alt="Unlock">
       </div>
       <div class="page-3">
         <span class="page-2"> &#8239;open access&#8239;</span> is the free, immediate, online availability of scholarship.
@@ -111,9 +112,9 @@
     <div class="col-md-12 page-1 text-center">Open Access Examples</div>
 
     <div class="col-md-3">
-      <a target="_blank" href="http://www.enchantingthedesert.com/home/">
+      <a target="_blank" rel="noopener" href="http://www.enchantingthedesert.com/home/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/desert.png" alt="Enchanting the Desert">
+          <img class="card-img-top" src="assets/images/projects/desert.webp" alt="Enchanting the Desert">
           <div class="card-body">
             <div class="project-title">Enchanting the Desert</div>
           </div>
@@ -122,9 +123,9 @@
     </div>
 
     <div class="col-md-3">
-      <a target="_blank" href="http://www.mappingsenufo.org/">
+      <a target="_blank" rel="noopener" href="http://www.mappingsenufo.org/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/mapping.png" alt="Mapping Senufo">
+          <img class="card-img-top" src="assets/images/projects/mapping.webp" alt="Mapping Senufo">
           <div class="card-body">
             <div class="project-title">Mapping Senufo</div>
           </div>
@@ -133,9 +134,9 @@
     </div>
 
     <div class="col-md-3">
-      <a target="_blank" href="https://www.fulcrum.org/">
+      <a target="_blank" rel="noopener" href="https://www.fulcrum.org/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/fulcrum.png" alt="Fulcrum Project">
+          <img class="card-img-top" src="assets/images/projects/fulcrum.webp" alt="Fulcrum Project">
           <div class="card-body">
             <div class="project-title">Fulcrum Project</div>
           </div>
@@ -144,9 +145,9 @@
     </div>
 
     <div class="col-md-3">
-      <a target="_blank" href="https://scalar.me/anvc/scalar/">
+      <a target="_blank" rel="noopener" href="https://scalar.me/anvc/scalar/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/scalar.png" alt="Scalar Project">
+          <img class="card-img-top" src="assets/images/projects/scalar.webp" alt="Scalar Project">
           <div class="card-body">
             <div class="project-title">Scalar Project</div>
           </div>
