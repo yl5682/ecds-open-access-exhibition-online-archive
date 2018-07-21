@@ -7,39 +7,39 @@
 <div class="wheel">
   <ul>
     <li class="oa-wheel oa-cover">
-      <img src="assets/images/home/cover.webp" height="150px" alt="Open Access Exhibition">
+      <img src="assets/images/home/cover.png" height="150px" alt="Open Access Exhibition">
     </li>
 
     {{#photo-swipe items=wheel history=false as |photoswipe|}}
       <li class="oa-wheel oa-wheel-black cursor-pointer">
-        <img src="assets/images/home/relation-immediate-and-free.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=0)}} alt="Immediate and Free">
+        <img src="assets/images/home/relation-immediate-and-free.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=0)}} alt="Immediate and Free">
       </li>
       <li class="oa-wheel oa-wheel-red cursor-pointer">
-        <img src="assets/images/home/reader-reducing-barriers-to-access.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=1)}} alt="Reader - Reduce Barriers to Access">
+        <img src="assets/images/home/reader-reducing-barriers-to-access.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=1)}} alt="Reader - Reduce Barriers to Access">
       </li>
       <li class="oa-wheel oa-wheel-red cursor-pointer">
-        <img src="assets/images/home/reader-sharing-and-using.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=2)}} alt="Reader - Sharing and Using">
+        <img src="assets/images/home/reader-sharing-and-using.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=2)}} alt="Reader - Sharing and Using">
       </li>
       <li class="oa-wheel oa-wheel-red cursor-pointer">
-        <img src="assets/images/home/reader-engaging-the-sustained-argument.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=3)}} alt="Reader - Engaging the Sustained Argument">
+        <img src="assets/images/home/reader-engaging-the-sustained-argument.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=3)}} alt="Reader - Engaging the Sustained Argument">
       </li>
       <li class="oa-wheel oa-wheel-black cursor-pointer">
-        <img src="assets/images/home/relation-new-possibilities.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=4)}} alt="New Possibilities">
+        <img src="assets/images/home/relation-new-possibilities.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=4)}} alt="New Possibilities">
       </li>
       <li class="oa-wheel oa-wheel-orange cursor-pointer">
-        <img src="assets/images/home/author-engaging-the-humanities.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=5)}} alt="Auhthor - Engaging the Humanities">
+        <img src="assets/images/home/author-engaging-the-humanities.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=5)}} alt="Auhthor - Engaging the Humanities">
       </li>
       <li class="oa-wheel oa-wheel-orange cursor-pointer">
-        <img src="assets/images/home/author-reducing-market-barriers.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=6)}} alt="Author - Reducing Market Barriers">
+        <img src="assets/images/home/author-reducing-market-barriers.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=6)}} alt="Author - Reducing Market Barriers">
       </li>
       <li class="oa-wheel oa-wheel-orange cursor-pointer">
-        <img src="assets/images/home/author-widening-potential-relationship.webp" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=7)}} alt="Author - Widening Potential Relationship">
+        <img src="assets/images/home/author-widening-potential-relationship.png" class="oa-wheel-item" {{action photoswipe.actions.open (hash index=7)}} alt="Author - Widening Potential Relationship">
       </li>
     {{/photo-swipe}}
   </ul>
 </div><!-- Wheel -->
 
-<div class="container">
+<div class="container wheel-container">
 
   <!-- Scroll Down -->
   <div class="row">
@@ -52,15 +52,24 @@
       </span>
     </div>
   </div><!-- Scroll Down -->
+</div>
 
   <!-- Introduction -->
-  <div class="row">
-    <div class="col-md-12 section">
-      <div class="page-1">
-        Open access is the free, immediate, online availability of scholarship. Ideally, it includes some rights that allow others to reuse the scholarship at least for noncommercial, educational purposes.
+  <div class="section-reverse section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="oa-statement">
+            Open access is the free, immediate, online availability of scholarship. Ideally, it includes some rights that allow others to reuse the scholarship at least for noncommercial, educational purposes.
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
+
+<div class="container">
+  <div class="row">
     <div class="col-md-6" style="color: white">
       <p>
         With the rise of open access initiatives around the globe, academics and university presses are exploring what it means to make a book open access while also ensuring that the book still serves its intended purpose.
@@ -79,7 +88,7 @@
 
     <div class="col-md-6">
       <div class="text-center spacer">
-        <img src="assets/images/home/lock-grey.webp" class="fit-image img-lock" alt="Unlock">
+        <img src="assets/images/home/lock-grey.png" class="fit-image img-lock" alt="Unlock">
       </div>
       <div class="page-3">
         <span class="page-2"> &#8239;open access&#8239;</span> is the free, immediate, online availability of scholarship.
@@ -114,7 +123,7 @@
     <div class="col-md-3">
       <a target="_blank" rel="noopener" href="http://www.enchantingthedesert.com/home/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/desert.webp" alt="Enchanting the Desert">
+          <img class="card-img-top" src="assets/images/projects/desert.png" alt="Enchanting the Desert">
           <div class="card-body">
             <div class="project-title">Enchanting the Desert</div>
           </div>
@@ -125,7 +134,7 @@
     <div class="col-md-3">
       <a target="_blank" rel="noopener" href="http://www.mappingsenufo.org/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/mapping.webp" alt="Mapping Senufo">
+          <img class="card-img-top" src="assets/images/projects/mapping.png" alt="Mapping Senufo">
           <div class="card-body">
             <div class="project-title">Mapping Senufo</div>
           </div>
@@ -136,7 +145,7 @@
     <div class="col-md-3">
       <a target="_blank" rel="noopener" href="https://www.fulcrum.org/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/fulcrum.webp" alt="Fulcrum Project">
+          <img class="card-img-top" src="assets/images/projects/fulcrum.png" alt="Fulcrum Project">
           <div class="card-body">
             <div class="project-title">Fulcrum Project</div>
           </div>
@@ -147,7 +156,7 @@
     <div class="col-md-3">
       <a target="_blank" rel="noopener" href="https://scalar.me/anvc/scalar/">
         <div class="card">
-          <img class="card-img-top" src="assets/images/projects/scalar.webp" alt="Scalar Project">
+          <img class="card-img-top" src="assets/images/projects/scalar.png" alt="Scalar Project">
           <div class="card-body">
             <div class="project-title">Scalar Project</div>
           </div>
@@ -159,11 +168,11 @@
   <!-- Footer -->
   <footer class="footer-flex-container">
     <div class="footer-copyrights">
-      <div class="highlight">Open Access Exhibition is sponsored by</div>
+      <div class="highlight">Open Access and the Book is sponsored by</div>
       <div class="copyright">
-        <div class="highlight"><a href="http://www.cfde.emory.edu/" class="footer-link" target=”_blank”>Emory Center for Faculty Development and Excellence</a> </div>
         <div class="highlight"><a href="http://digitalscholarship.emory.edu/" class="footer-link" target=”_blank”>Emory Center for Digital Scholarship</a> </div>
-        <div class="highlight"><a href="http://fchi.emory.edu/home/" class="footer-link" target=”_blank”>Emory Fox Center for Humanistic Inquries</a></div>
+        <div class="highlight"><a href="http://fchi.emory.edu/digitalpublishing/index.html" class="footer-link" target=”_blank”>Emory Digital Publishing in the Humanities</a></div>
+        <div class="highlight"><a href="http://sco.library.emory.edu/index.html" class="footer-link" target=”_blank”>Emory Libraries / Scholarly Communications Office</a> </div>
       </div>
     </div>
   </footer>
