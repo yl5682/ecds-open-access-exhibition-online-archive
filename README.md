@@ -1,6 +1,6 @@
-# open
+# Open Access Exhibition Online Archive
 
-This is the OpenAccess Exhibition redesigned and developed for an online archive.
+This is the Open Access Exhibition redesigned and developed for an online archive.
 It is built in Ember as a single page application. Graphics and flyer pages are
 from the original exhibition per requirements.
 
