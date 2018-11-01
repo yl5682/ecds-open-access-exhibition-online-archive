@@ -1,5 +1,9 @@
 # open
 
+This is the OpenAccess Exhibition redesigned and developed for an online archive.
+It is built in Ember as a single page application. Graphics and flyer pages are
+from the original exhibition per requirements.
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
