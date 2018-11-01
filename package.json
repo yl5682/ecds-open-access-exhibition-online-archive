@@ -17,6 +17,8 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "cryptiles": ">=4.1.2",
+    "merge": ">=1.2.1",
     "hoek": ">=4.2.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
