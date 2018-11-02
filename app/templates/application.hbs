@@ -100,18 +100,16 @@
   <!-- Benefits and Tensions -->
   <div class="row section text-center spacer">
     <div class="col-md-6 block">
-      <div class="text-1 orange">for authors</div>
       <div class="oa-benefits"><span class="page-orange">&#8239;You write to be read.&#8239;</span></div>
       {{#photo-swipe items=author history=false as |photoswipe|}}
-        <a class="link-orange text-1 btn-outline-orange" {{action photoswipe.actions.open (hash index=0)}}> benefits and tensions</a>
+        <a class="link-orange text-1 btn-outline-orange" {{action photoswipe.actions.open (hash index=0)}}> tensions for authors </a>
       {{/photo-swipe}}
     </div>
 
     <div class="col-md-6 block">
-      <div class="text-1 red">for readers</div>
       <div class="oa-benefits"><span class="page-red">&#8239;You read to write.&#8239;</span></div>
       {{#photo-swipe items=reader history=false as |photoswipe|}}
-        <a class="link-red text-1 btn-outline-red" {{action photoswipe.actions.open (hash index=0)}}> benefits and tensions</a>
+        <a class="link-red text-1 btn-outline-red" {{action photoswipe.actions.open (hash index=0)}}> tensions for readers </a>
       {{/photo-swipe}}
     </div>
   </div><!-- Benefits and Tensions -->
